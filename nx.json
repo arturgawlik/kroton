@@ -25,6 +25,15 @@
     "kroton-e2e": {
       "tags": [],
       "implicitDependencies": ["kroton"]
+    },
+    "web-shell-feature": {
+      "tags": []
+    },
+    "web-shell-ui-layout": {
+      "tags": []
+    },
+    "web-shell-ui-unauthorized-layout": {
+      "tags": []
     }
   }
 }
