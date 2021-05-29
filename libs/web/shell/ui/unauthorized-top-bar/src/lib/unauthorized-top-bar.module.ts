@@ -7,4 +7,4 @@ import { UnauthorizedTopBarComponent } from './unauthorized-top-bar.component';
   declarations: [UnauthorizedTopBarComponent],
   exports: [UnauthorizedTopBarComponent]
 })
-export class WebShellUiUnauthorizedTopBarModule {}
+export class UnauthorizedTopBarModule {}

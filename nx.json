@@ -40,6 +40,9 @@
     },
     "web-shell-ui-unauthorized-top-bar": {
       "tags": []
+    },
+    "web-shell-ui-unauthorized-main-view": {
+      "tags": []
     }
   }
 }

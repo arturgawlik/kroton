@@ -25,6 +25,9 @@
       ],
       "@kroton/web/shell/ui/unauthorized-top-bar": [
         "libs/web/shell/ui/unauthorized-top-bar/src/index.ts"
+      ],
+      "@kroton/web/shell/ui/unauthorized-main-view": [
+        "libs/web/shell/ui/unauthorized-main-view/src/index.ts"
       ]
     }
   },

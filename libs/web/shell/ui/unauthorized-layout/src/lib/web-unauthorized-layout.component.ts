@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'kroton-unauthorized-layout',
   template: `
     <kroton-unauthorized-top-bar></kroton-unauthorized-top-bar>
+    <kroton-unauthorized-main-view></kroton-unauthorized-main-view>
   `
 })
-export class UnauthorizedLayoutComponent {
+export class WebUnauthorizedLayoutComponent {
 }

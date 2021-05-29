@@ -1,6 +1,6 @@
 import { Route } from '@angular/router';
 import { LayoutComponent } from '@kroton/web-shell-ui-layout';
-import { UnauthorizedLayoutComponent } from '@kroton/web-shell-ui-unauthorized-layout';
+import { WebUnauthorizedLayoutComponent } from '@kroton/web-shell-ui-unauthorized-layout';
 
 export const webShellRoutes: Route[] = [
   {
@@ -15,7 +15,7 @@ export const webShellRoutes: Route[] = [
   },
   {
     path: '',
-    component: UnauthorizedLayoutComponent,
+    component: WebUnauthorizedLayoutComponent,
     // children: [
     //   {
     //     path: '',
