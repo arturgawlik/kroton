@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { WebShellModule } from '@kroton/web-shell-feature';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    WebShellModule
+    WebShellModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

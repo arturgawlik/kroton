@@ -48,7 +48,7 @@
             "tsConfig": "apps/kroton/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["apps/kroton/src/favicon.ico", "apps/kroton/src/assets"],
-            "styles": ["apps/kroton/src/styles.scss"],
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css", "apps/kroton/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
