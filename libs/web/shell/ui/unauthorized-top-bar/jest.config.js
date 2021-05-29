@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'web-shell-ui-layout',
+  displayName: 'web-shell-ui-unauthorized-top-bar',
   preset: '../../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -14,7 +14,8 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../coverage/libs/web-shell-ui-layout',
+  coverageDirectory:
+    '../../../../../coverage/libs/web/shell/ui/unauthorized-top-bar',
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
     'jest-preset-angular/build/serializers/ng-snapshot',

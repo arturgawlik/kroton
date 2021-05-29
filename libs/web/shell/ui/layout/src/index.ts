@@ -1,1 +1,2 @@
-export * from './lib/web-shell-ui-layout.module';
+export * from './lib/web-layout.module';
+export * from  './lib/layout.component'

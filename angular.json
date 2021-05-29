@@ -221,6 +221,56 @@
           }
         }
       }
+    },
+    "web-shell-ui-top-bar": {
+      "projectType": "library",
+      "root": "libs/web/shell/ui/top-bar",
+      "sourceRoot": "libs/web/shell/ui/top-bar/src",
+      "prefix": "kroton",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shell/ui/top-bar"],
+          "options": {
+            "jestConfig": "libs/web/shell/ui/top-bar/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shell/ui/top-bar/src/**/*.ts",
+              "libs/web/shell/ui/top-bar/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "web-shell-ui-unauthorized-top-bar": {
+      "projectType": "library",
+      "root": "libs/web/shell/ui/unauthorized-top-bar",
+      "sourceRoot": "libs/web/shell/ui/unauthorized-top-bar/src",
+      "prefix": "kroton",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shell/ui/unauthorized-top-bar"],
+          "options": {
+            "jestConfig": "libs/web/shell/ui/unauthorized-top-bar/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shell/ui/unauthorized-top-bar/src/**/*.ts",
+              "libs/web/shell/ui/unauthorized-top-bar/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   }
 }

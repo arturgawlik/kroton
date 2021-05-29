@@ -1,6 +1,6 @@
 module.exports = {
   displayName: 'web-shell-ui-unauthorized-layout',
-  preset: '../../jest.preset.js',
+  preset: '../../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
