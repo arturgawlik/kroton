@@ -28,7 +28,14 @@
       ],
       "@kroton/web/shell/ui/unauthorized-main-view": [
         "libs/web/shell/ui/unauthorized-main-view/src/index.ts"
-      ]
+      ],
+      "@kroton/web/shared/ui/button": [
+        "libs/web/shared/ui/button/src/index.ts"
+      ],
+      "@kroton/web/unauthorized-home/feature": [
+        "libs/web/unauthorized-home/feature/src/index.ts"
+      ],
+      "@kroton/web/shell/ui/footbar": ["libs/web/shell/ui/footbar/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

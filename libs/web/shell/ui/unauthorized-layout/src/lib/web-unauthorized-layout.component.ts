@@ -3,9 +3,24 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'kroton-unauthorized-layout',
   template: `
-    <kroton-unauthorized-top-bar></kroton-unauthorized-top-bar>
-    <kroton-unauthorized-main-view></kroton-unauthorized-main-view>
-  `
+    <div class="flex flex-col h-screen bg-patterns">
+      <kroton-unauthorized-top-bar></kroton-unauthorized-top-bar>
+      <kroton-unauthorized-main-view></kroton-unauthorized-main-view>
+      <div class="mt-auto">
+        <kroton-footbar></kroton-footbar>
+      </div>
+    </div>
+  `,
+  styles:[`
+    .bg-patterns {
+      background-image: url('/assets/patterns.svg');
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+  `]
 })
 export class WebUnauthorizedLayoutComponent {
 }

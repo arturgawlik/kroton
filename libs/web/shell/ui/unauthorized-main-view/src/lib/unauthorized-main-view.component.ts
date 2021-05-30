@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'kroton-unauthorized-main-view',
   template: `
     <div class="w-full">
-      <main style="max-width: 1600px" class="mx-auto">
-
+      <main class="kroton-max-width mx-auto">
+        <router-outlet></router-outlet>
       </main>
     </div>
   `

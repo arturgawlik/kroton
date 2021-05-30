@@ -7,5 +7,8 @@ module.exports = {
     '<rootDir>/libs/web/shell/ui/top-bar',
     '<rootDir>/libs/web/shell/ui/unauthorized-top-bar',
     '<rootDir>/libs/web/shell/ui/unauthorized-main-view',
+    '<rootDir>/libs/web/shared/ui/button',
+    '<rootDir>/libs/web/unauthorized-home/feature',
+    '<rootDir>/libs/web/shell/ui/footbar',
   ],
 };

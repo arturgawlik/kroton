@@ -43,6 +43,15 @@
     },
     "web-shell-ui-unauthorized-main-view": {
       "tags": []
+    },
+    "web-shared-ui-button": {
+      "tags": []
+    },
+    "web-unauthorized-home-feature": {
+      "tags": []
+    },
+    "web-shell-ui-footbar": {
+      "tags": []
     }
   }
 }

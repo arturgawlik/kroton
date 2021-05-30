@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UnauthorizedTopBarComponent } from './unauthorized-top-bar.component';
-import {MatRippleModule} from '@angular/material/core';
+import { WebSharedButtonModule } from '@kroton/web/shared/ui/button';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-  imports: [CommonModule, MatRippleModule],
+  imports: [CommonModule, WebSharedButtonModule, FontAwesomeModule],
   declarations: [UnauthorizedTopBarComponent],
   exports: [UnauthorizedTopBarComponent]
 })

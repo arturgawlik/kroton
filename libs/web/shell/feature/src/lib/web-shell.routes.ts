@@ -16,12 +16,12 @@ export const webShellRoutes: Route[] = [
   {
     path: '',
     component: WebUnauthorizedLayoutComponent,
-    // children: [
-    //   {
-    //     path: '',
-    //     loadChildren: async () => (await import('@angular-spotify/web/home/feature')).HomeModule
-    //   }
-    // ]
+    children: [
+      {
+        path: '',
+        loadChildren: async () => (await import('@kroton/web/unauthorized-home/feature')).UnauthorizedHome
+      }
+    ]
   },
   {
     path: '',

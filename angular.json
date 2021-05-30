@@ -47,8 +47,24 @@
             "polyfills": "apps/kroton/src/polyfills.ts",
             "tsConfig": "apps/kroton/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["apps/kroton/src/favicon.ico", "apps/kroton/src/assets"],
-            "styles": ["./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css", "apps/kroton/src/styles.scss"],
+            "assets": [
+              "apps/kroton/src/favicon.ico",
+              "apps/kroton/src/assets",
+              {
+                "input": "libs/web/unauthorized-home/feature/src/assets",
+                "glob": "**/*",
+                "output": "assets/"
+              },
+              {
+                "input": "libs/web/shell/ui/unauthorized-layout/src/assets",
+                "glob": "**/*",
+                "output": "assets/"
+              }
+            ],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "apps/kroton/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -292,6 +308,81 @@
             "lintFilePatterns": [
               "libs/web/shell/ui/unauthorized-main-view/src/**/*.ts",
               "libs/web/shell/ui/unauthorized-main-view/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "web-shared-ui-button": {
+      "projectType": "library",
+      "root": "libs/web/shared/ui/button",
+      "sourceRoot": "libs/web/shared/ui/button/src",
+      "prefix": "kroton",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shared/ui/button"],
+          "options": {
+            "jestConfig": "libs/web/shared/ui/button/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shared/ui/button/src/**/*.ts",
+              "libs/web/shared/ui/button/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "web-unauthorized-home-feature": {
+      "projectType": "library",
+      "root": "libs/web/unauthorized-home/feature",
+      "sourceRoot": "libs/web/unauthorized-home/feature/src",
+      "prefix": "kroton",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/unauthorized-home/feature"],
+          "options": {
+            "jestConfig": "libs/web/unauthorized-home/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/unauthorized-home/feature/src/**/*.ts",
+              "libs/web/unauthorized-home/feature/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "web-shell-ui-footbar": {
+      "projectType": "library",
+      "root": "libs/web/shell/ui/footbar",
+      "sourceRoot": "libs/web/shell/ui/footbar/src",
+      "prefix": "kroton",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shell/ui/footbar"],
+          "options": {
+            "jestConfig": "libs/web/shell/ui/footbar/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shell/ui/footbar/src/**/*.ts",
+              "libs/web/shell/ui/footbar/src/**/*.html"
             ]
           }
         }
