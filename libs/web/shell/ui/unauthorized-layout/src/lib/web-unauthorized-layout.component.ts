@@ -14,11 +14,6 @@ import { Component } from '@angular/core';
   styles:[`
     .bg-patterns {
       background-image: url('/assets/patterns.svg');
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-position: top;
     }
   `]
 })
