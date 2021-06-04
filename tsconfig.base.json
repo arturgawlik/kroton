@@ -35,7 +35,11 @@
       "@kroton/web/unauthorized-home/feature": [
         "libs/web/unauthorized-home/feature/src/index.ts"
       ],
-      "@kroton/web/shell/ui/footbar": ["libs/web/shell/ui/footbar/src/index.ts"]
+      "@kroton/web/shell/ui/footbar": [
+        "libs/web/shell/ui/footbar/src/index.ts"
+      ],
+      "@kroton/web/sign-in/feature": ["libs/web/sign-in/feature/src/index.ts"],
+      "@kroton/web/sign-up/feature": ["libs/web/sign-up/feature/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

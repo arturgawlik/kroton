@@ -387,6 +387,56 @@
           }
         }
       }
+    },
+    "web-sign-in-feature": {
+      "projectType": "library",
+      "root": "libs/web/sign-in/feature",
+      "sourceRoot": "libs/web/sign-in/feature/src",
+      "prefix": "kroton",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/sign-in/feature"],
+          "options": {
+            "jestConfig": "libs/web/sign-in/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/sign-in/feature/src/**/*.ts",
+              "libs/web/sign-in/feature/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "web-sign-up-feature": {
+      "projectType": "library",
+      "root": "libs/web/sign-up/feature",
+      "sourceRoot": "libs/web/sign-up/feature/src",
+      "prefix": "kroton",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/sign-up/feature"],
+          "options": {
+            "jestConfig": "libs/web/sign-up/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/sign-up/feature/src/**/*.ts",
+              "libs/web/sign-up/feature/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   }
 }

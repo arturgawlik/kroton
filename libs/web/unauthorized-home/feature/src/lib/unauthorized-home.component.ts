@@ -12,12 +12,11 @@ import { Component } from '@angular/core';
       </p>
       <p class="mt-6 text-gray-400 text-xl text-center bg-white">
         Go and
-        <kroton-button krotonClasses='text-black text-sm w-full sm:w-auto'>Login</kroton-button>
+        <kroton-button routerLink='/signin' krotonClasses='text-black text-sm w-full sm:w-auto'>Login</kroton-button>
         or
-        <kroton-button krotonClasses='text-black text-sm bg-pink-200 w-full sm:w-auto'>Register new account</kroton-button>
+        <kroton-button routerLink='/signup' krotonClasses='text-black text-sm bg-pink-200 w-full sm:w-auto'>Register new account</kroton-button>
         and start using the app!
       </p>
-      <div role="log" aria-live="assertive" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; white-space: nowrap; padding: 0px; width: 1px; position: absolute;"></div>
     </div>
   `
 })
