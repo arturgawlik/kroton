@@ -85,6 +85,10 @@
                 {
                   "replace": "apps/kroton/src/environments/environment.ts",
                   "with": "apps/kroton/src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "libs/web/shell/feature/src/lib/build-specifics/index.ts",
+                  "with": "libs/web/shell/feature/src/lib/build-specifics/index.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -434,6 +438,77 @@
               "libs/web/sign-up/feature/src/**/*.ts",
               "libs/web/sign-up/feature/src/**/*.html"
             ]
+          }
+        }
+      }
+    },
+    "web-shell-ui-main-view": {
+      "projectType": "library",
+      "root": "libs/web/shell/ui/main-view",
+      "sourceRoot": "libs/web/shell/ui/main-view/src",
+      "prefix": "kroton",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shell/ui/main-view"],
+          "options": {
+            "jestConfig": "libs/web/shell/ui/main-view/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shell/ui/main-view/src/**/*.ts",
+              "libs/web/shell/ui/main-view/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "-web-shared-data-access-store": {
+      "root": "libs//web/shared/data-access/store",
+      "sourceRoot": "libs/web/shared/data-access/store/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs//web/shared/data-access/store/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shared/data-access/store"],
+          "options": {
+            "jestConfig": "libs/web/shared/data-access/store/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-shell-utils-guards-unauthorized-guard": {
+      "root": "libs/web/shell/utils/guards/unauthorized-guard",
+      "sourceRoot": "libs/web/shell/utils/guards/unauthorized-guard/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shell/utils/guards/unauthorized-guard/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/web/shell/utils/guards/unauthorized-guard"
+          ],
+          "options": {
+            "jestConfig": "libs/web/shell/utils/guards/unauthorized-guard/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

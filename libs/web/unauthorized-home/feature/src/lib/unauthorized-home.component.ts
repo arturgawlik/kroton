@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { login } from '@kroton//web/shared/data-access/store';
 
 @Component({
   selector: 'kroton-unauthorized-home',
@@ -12,13 +14,21 @@ import { Component } from '@angular/core';
       </p>
       <p class="mt-6 text-gray-400 text-xl text-center bg-white">
         Go and
-        <kroton-button routerLink='/signin' krotonClasses='text-black text-sm w-full sm:w-auto'>Login</kroton-button>
+        <kroton-button (click)='loginClick()' krotonClasses='text-black text-sm w-full sm:w-auto'>Login</kroton-button>
         or
-        <kroton-button routerLink='/signup' krotonClasses='text-black text-sm bg-pink-200 w-full sm:w-auto'>Register new account</kroton-button>
+        <kroton-button (click)='loginClick()' krotonClasses='text-black text-sm bg-pink-200 w-full sm:w-auto'>Register new account</kroton-button>
         and start using the app!
       </p>
     </div>
   `
 })
 export class UnauthorizedHomeComponent {
+
+  constructor(private store: Store) {
+  }
+
+  loginClick(): void {
+    this.store.dispatch(login())
+  }
+
 }

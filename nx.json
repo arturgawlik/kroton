@@ -58,6 +58,15 @@
     },
     "web-sign-up-feature": {
       "tags": []
+    },
+    "web-shell-ui-main-view": {
+      "tags": []
+    },
+    "-web-shared-data-access-store": {
+      "tags": []
+    },
+    "web-shell-utils-guards-unauthorized-guard": {
+      "tags": []
     }
   }
 }
