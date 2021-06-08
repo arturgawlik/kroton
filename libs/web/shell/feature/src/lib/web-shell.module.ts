@@ -5,7 +5,7 @@ import { webShellRoutes } from './web-shell.routes';
 import { AuthModule } from '@auth0/auth0-angular';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { extModules } from './build-specyfics';
+import { extModules } from './build-specifics';
 import { AuthEffects } from '@kroton//web/shared/data-access/store';
 
 @NgModule({
