@@ -6,7 +6,7 @@ import { Store } from '@ngrx/store';
 @Component({
   selector: 'kroton-top-bar',
   template: `
-    <div class="w-full shadow-md bg-white fixed top-0">
+    <div class="w-full shadow-md bg-white fixed top-0 z-10">
       <nav class="kroton-max-width mx-auto py-2 px-2">
         <div class="flex justify-items-stretch">
           <kroton-button routerLink='/' krotonClasses="uppercase tracking-widest">
