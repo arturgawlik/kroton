@@ -67,6 +67,9 @@
     },
     "web-shell-utils-guards-unauthorized-guard": {
       "tags": []
+    },
+    "-web-shell-ui-module-menu": {
+      "tags": []
     }
   }
 }

@@ -512,6 +512,27 @@
           }
         }
       }
+    },
+    "-web-shell-ui-module-menu": {
+      "root": "libs//web/shell/ui/module-menu",
+      "sourceRoot": "libs/web/shell/ui/module-menu/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs//web/shell/ui/module-menu/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shell/ui/module-menu"],
+          "options": {
+            "jestConfig": "libs/web/shell/ui/module-menu/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

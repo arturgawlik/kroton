@@ -48,6 +48,9 @@
       ],
       "@kroton/web/shell/utils/guards/unauthorized-guard": [
         "libs/web/shell/utils/guards/unauthorized-guard/src/index.ts"
+      ],
+      "@kroton//web/shell/ui/module-menu": [
+        "libs/web/shell/ui/module-menu/src/index.ts"
       ]
     }
   },

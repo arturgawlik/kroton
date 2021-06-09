@@ -26,14 +26,14 @@ export const webShellRoutes: Route[] = [
         path: '',
         loadChildren: async () => (await import('@kroton/web/unauthorized-home/feature')).UnauthorizedHome
       },
-      {
-        path: 'signin',
-        loadChildren: async () => (await import('@kroton/web/sign-in/feature')).SignInModule
-      },
-      {
-        path: 'signup',
-        loadChildren: async () => (await import('@kroton/web/sign-up/feature')).SignUpModule
-      },
+      // {
+      //   path: 'signin',
+      //   loadChildren: async () => (await import('@kroton/web/sign-in/feature')).SignInModule
+      // },
+      // {
+      //   path: 'signup',
+      //   loadChildren: async () => (await import('@kroton/web/sign-up/feature')).SignUpModule
+      // },
     ],
     canActivate: [
       UnauthorizedGuard

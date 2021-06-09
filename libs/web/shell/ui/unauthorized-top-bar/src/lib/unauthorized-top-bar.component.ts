@@ -13,12 +13,12 @@ import { login } from '@kroton//web/shared/data-access/store';
         </kroton-button>
         <div class="ml-auto flex flex-nowrap">
           <kroton-button (click)='loginClick()'>
-            <span class="hidden sm:inline">Login</span>
-            <fa-icon class="sm:hidden" [icon]="faSignInAlt"></fa-icon>
+            <fa-icon [icon]="faSignInAlt"></fa-icon>
+            <span class="hidden sm:inline ml-2">Login</span>
           </kroton-button>
           <kroton-button (click)='loginClick()' krotonClasses="ml-2 bg-pink-200">
-            <span class="hidden sm:inline">Register new account</span>
-            <fa-icon class="sm:hidden" [icon]="faUserPlus"></fa-icon>
+            <fa-icon [icon]="faUserPlus"></fa-icon>
+            <span class="hidden sm:inline ml-2">Register new account</span>
           </kroton-button>
         </div>
       </nav>

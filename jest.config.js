@@ -15,5 +15,6 @@ module.exports = {
     '<rootDir>/libs/web/shell/ui/main-view',
     '<rootDir>/libs//web/shared/data-access/store',
     '<rootDir>/libs/web/shell/utils/guards/unauthorized-guard',
+    '<rootDir>/libs//web/shell/ui/module-menu',
   ],
 };
