@@ -49,7 +49,15 @@
       ],
       "@kroton//web/shell/ui/module-menu": [
         "libs/web/shell/ui/module-menu/src/index.ts"
-      ]
+      ],
+      "@kroton/web/new-feature/feature": [
+        "libs/web/new-feature/feature/src/index.ts"
+      ],
+      "@kroton/web/work-time/feature": [
+        "libs/web/work-time/feature/src/index.ts"
+      ],
+      "@kroton/web/tasks/feature": ["libs/web/tasks/feature/src/index.ts"],
+      "@kroton/web/team/feature": ["libs/web/team/feature/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

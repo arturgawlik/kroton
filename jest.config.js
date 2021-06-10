@@ -14,5 +14,9 @@ module.exports = {
     '<rootDir>/libs//web/shared/data-access/store',
     '<rootDir>/libs/web/shell/utils/guards/unauthorized-guard',
     '<rootDir>/libs//web/shell/ui/module-menu',
+    '<rootDir>/libs/web/new-feature/feature',
+    '<rootDir>/libs/web/work-time/feature',
+    '<rootDir>/libs/web/tasks/feature',
+    '<rootDir>/libs/web/team/feature',
   ],
 };

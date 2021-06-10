@@ -483,6 +483,90 @@
           }
         }
       }
+    },
+    "web-new-feature-feature": {
+      "root": "libs/web/new-feature/feature",
+      "sourceRoot": "libs/web/new-feature/feature/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/new-feature/feature/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/new-feature/feature"],
+          "options": {
+            "jestConfig": "libs/web/new-feature/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-work-time-feature": {
+      "root": "libs/web/work-time/feature",
+      "sourceRoot": "libs/web/work-time/feature/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/work-time/feature/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/work-time/feature"],
+          "options": {
+            "jestConfig": "libs/web/work-time/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-tasks-feature": {
+      "root": "libs/web/tasks/feature",
+      "sourceRoot": "libs/web/tasks/feature/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/tasks/feature/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/tasks/feature"],
+          "options": {
+            "jestConfig": "libs/web/tasks/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-team-feature": {
+      "root": "libs/web/team/feature",
+      "sourceRoot": "libs/web/team/feature/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/team/feature/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/team/feature"],
+          "options": {
+            "jestConfig": "libs/web/team/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

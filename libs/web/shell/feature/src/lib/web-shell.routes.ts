@@ -8,12 +8,29 @@ export const webShellRoutes: Route[] = [
   {
     path: 'app',
     component: LayoutComponent,
-    // children: [
-    //   {
-    //     path: '',
-    //     loadChildren: async () => (await import('@angular-spotify/web/home/feature')).HomeModule
-    //   }
-    // ]
+    children: [
+      {
+        path: 'new-feature',
+        loadChildren: async () => (await import('@kroton/web/new-feature/feature')).NewFeatureModule
+      },
+      {
+        path: 'work-time',
+        loadChildren: async () => (await import('@kroton/web/work-time/feature')).WorkTimeModule
+      },
+      {
+        path: 'tasks',
+        loadChildren: async () => (await import('@kroton/web/tasks/feature')).TasksModule
+      },
+      {
+        path: 'team',
+        loadChildren: async () => (await import('@kroton/web/team/feature')).TeamModule
+      },
+      {
+        path: '',
+        redirectTo: 'work-time',
+        pathMatch: 'full'
+      }
+    ],
     canActivate: [
       AuthGuard
     ]
