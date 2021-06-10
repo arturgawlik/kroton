@@ -9,7 +9,7 @@ import { faClock, faTasks, faFire, faUserFriends } from '@fortawesome/free-solid
         <fa-icon [icon]="faClock"></fa-icon>
         <span class="ml-2">Work Time</span>
       </kroton-button>
-      <kroton-button krotonDisabled="true" krotonClasses="p-1 bg-pink-400 cursor-not-allowed text-white w-full sm:w-36 my-1 sm:m-1">
+      <kroton-button krotonDisabled="true" krotonClasses="p-1 bg-pink-400 cursor-not-allowed text-white w-full sm:w-36 my-1 sm:m-1 ">
         <fa-icon [icon]="faTasks"></fa-icon>
         <span class="ml-2">Tasks</span>
       </kroton-button>

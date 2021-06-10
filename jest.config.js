@@ -10,8 +10,6 @@ module.exports = {
     '<rootDir>/libs/web/shared/ui/button',
     '<rootDir>/libs/web/unauthorized-home/feature',
     '<rootDir>/libs/web/shell/ui/footbar',
-    '<rootDir>/libs/web/sign-in/feature',
-    '<rootDir>/libs/web/sign-up/feature',
     '<rootDir>/libs/web/shell/ui/main-view',
     '<rootDir>/libs//web/shared/data-access/store',
     '<rootDir>/libs/web/shell/utils/guards/unauthorized-guard',
