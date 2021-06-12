@@ -15,6 +15,7 @@ import { Component } from '@angular/core';
     .bg-patterns {
       background-image: url('/assets/patterns.svg');
     }
+
   `]
 })
 export class WebUnauthorizedLayoutComponent {

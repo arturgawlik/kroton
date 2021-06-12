@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
         krotonHref="https://github.com/arturgawlik/kroton/issues/new"
         class="mt-5 sm:mt-2"
       >
+        <fa-icon [icon]=""></fa-icon>
         Create New Issue
       </kroton-button>
     </div>

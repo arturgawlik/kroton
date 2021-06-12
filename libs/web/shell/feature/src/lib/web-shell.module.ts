@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { PreloadAllModules, RouterModule } from '@angular/router';
 import { webShellRoutes } from './web-shell.routes';
 import { AuthModule } from '@auth0/auth0-angular';
 import { StoreModule } from '@ngrx/store';
@@ -13,6 +13,7 @@ import { AuthEffects } from '@kroton//web/shared/data-access/store';
     CommonModule,
     RouterModule.forRoot(webShellRoutes, {
       scrollPositionRestoration: 'top',
+      preloadingStrategy: PreloadAllModules
     }),
     AuthModule.forRoot({
       domain: 'dev-6zd7u8el.eu.auth0.com',
