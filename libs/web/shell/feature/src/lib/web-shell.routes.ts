@@ -15,7 +15,7 @@ export const webShellRoutes: Route[] = [
       },
       {
         path: 'work-time',
-        loadChildren: async () => (await import('@kroton/web/work-time/feature')).WorkTimeModule
+        loadChildren: async () => (await import('@kroton/web/work-time/feature/shell')).WorkTimeShellModule
       },
       {
         path: 'tasks',

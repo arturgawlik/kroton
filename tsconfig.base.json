@@ -53,11 +53,14 @@
       "@kroton/web/new-feature/feature": [
         "libs/web/new-feature/feature/src/index.ts"
       ],
-      "@kroton/web/work-time/feature": [
-        "libs/web/work-time/feature/src/index.ts"
-      ],
       "@kroton/web/tasks/feature": ["libs/web/tasks/feature/src/index.ts"],
-      "@kroton/web/team/feature": ["libs/web/team/feature/src/index.ts"]
+      "@kroton/web/team/feature": ["libs/web/team/feature/src/index.ts"],
+      "@kroton/web/work-time/feature/shell": [
+        "libs/web/work-time/feature/shell/src/index.ts"
+      ],
+      "@kroton/web/work-time/feature/home": [
+        "libs/web/work-time/feature/home/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -68,13 +68,16 @@
     "web-new-feature-feature": {
       "tags": []
     },
-    "web-work-time-feature": {
-      "tags": []
-    },
     "web-tasks-feature": {
       "tags": []
     },
     "web-team-feature": {
+      "tags": []
+    },
+    "web-work-time-feature-shell": {
+      "tags": []
+    },
+    "web-work-time-feature-home": {
       "tags": []
     }
   }

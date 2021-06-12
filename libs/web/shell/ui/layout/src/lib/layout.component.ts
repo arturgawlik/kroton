@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   styles: [`
   `],
   template: `
-    <div class="flex flex-col min-h-screen bg-yellow-50">
+    <div class="flex flex-col min-h-screen bg-rose-300">
       <kroton-top-bar></kroton-top-bar>
       <kroton-module-menu></kroton-module-menu>
       <kroton-main-view></kroton-main-view>

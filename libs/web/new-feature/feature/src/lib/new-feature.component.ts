@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
       <p class="text-2xl text-justify sm:text-left">You can request for new feature by creating new or upvote existing one issue on github.</p>
       <kroton-button
         krotonHref="https://github.com/arturgawlik/kroton/issues/new"
-        class="mt-5 sm:mt-2"
+        class="mt-5 sm:mt-2 block"
       >
         <fa-icon [icon]=""></fa-icon>
         Create New Issue

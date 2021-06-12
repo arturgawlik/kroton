@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WorkTimeComponent } from './work-time.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -9,11 +8,11 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       {
         path: '',
-        component: WorkTimeComponent
+        loadChildren: async () =>
+          (await import('@kroton/web/work-time/feature/home')).WorkTimeHomeModule
       }
     ])
-  ],
-  declarations: [WorkTimeComponent]
+  ]
 })
-export class WorkTimeModule {
+export class WorkTimeShellModule {
 }

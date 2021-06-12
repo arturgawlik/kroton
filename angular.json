@@ -505,27 +505,6 @@
         }
       }
     },
-    "web-work-time-feature": {
-      "root": "libs/web/work-time/feature",
-      "sourceRoot": "libs/web/work-time/feature/src",
-      "projectType": "library",
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/web/work-time/feature/**/*.ts"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/web/work-time/feature"],
-          "options": {
-            "jestConfig": "libs/web/work-time/feature/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
     "web-tasks-feature": {
       "root": "libs/web/tasks/feature",
       "sourceRoot": "libs/web/tasks/feature/src",
@@ -563,6 +542,48 @@
           "outputs": ["coverage/libs/web/team/feature"],
           "options": {
             "jestConfig": "libs/web/team/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-work-time-feature-shell": {
+      "root": "libs/web/work-time/feature/shell",
+      "sourceRoot": "libs/web/work-time/feature/shell/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/work-time/feature/shell/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/work-time/feature/shell"],
+          "options": {
+            "jestConfig": "libs/web/work-time/feature/shell/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-work-time-feature-home": {
+      "root": "libs/web/work-time/feature/home",
+      "sourceRoot": "libs/web/work-time/feature/home/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/work-time/feature/home/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/work-time/feature/home"],
+          "options": {
+            "jestConfig": "libs/web/work-time/feature/home/jest.config.js",
             "passWithNoTests": true
           }
         }
