@@ -56,6 +56,11 @@
                 "output": "assets/"
               },
               {
+                "input": "libs/web/shell/ui/module-menu/src/assets",
+                "glob": "**/*",
+                "output": "assets/"
+              },
+              {
                 "input": "libs/web/shell/ui/unauthorized-layout/src/assets",
                 "glob": "**/*",
                 "output": "assets/"
@@ -584,6 +589,69 @@
           "outputs": ["coverage/libs/web/work-time/feature/home"],
           "options": {
             "jestConfig": "libs/web/work-time/feature/home/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-work-time-ui-notes": {
+      "root": "libs/web/work-time/ui/notes",
+      "sourceRoot": "libs/web/work-time/ui/notes/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/work-time/ui/notes/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/work-time/ui/notes"],
+          "options": {
+            "jestConfig": "libs/web/work-time/ui/notes/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-work-time-ui-note-editor": {
+      "root": "libs/web/work-time/ui/note-editor",
+      "sourceRoot": "libs/web/work-time/ui/note-editor/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/work-time/ui/note-editor/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/work-time/ui/note-editor"],
+          "options": {
+            "jestConfig": "libs/web/work-time/ui/note-editor/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-work-time-ui-note": {
+      "root": "libs/web/work-time/ui/note",
+      "sourceRoot": "libs/web/work-time/ui/note/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/work-time/ui/note/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/work-time/ui/note"],
+          "options": {
+            "jestConfig": "libs/web/work-time/ui/note/jest.config.js",
             "passWithNoTests": true
           }
         }

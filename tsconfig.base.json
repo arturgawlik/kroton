@@ -60,6 +60,15 @@
       ],
       "@kroton/web/work-time/feature/home": [
         "libs/web/work-time/feature/home/src/index.ts"
+      ],
+      "@kroton/web/work-time/ui/notes": [
+        "libs/web/work-time/ui/notes/src/index.ts"
+      ],
+      "@kroton/web/work-time/ui/note-editor": [
+        "libs/web/work-time/ui/note-editor/src/index.ts"
+      ],
+      "@kroton/web/work-time/ui/note": [
+        "libs/web/work-time/ui/note/src/index.ts"
       ]
     }
   },

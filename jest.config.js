@@ -19,5 +19,8 @@ module.exports = {
     '<rootDir>/libs/web/team/feature',
     '<rootDir>/libs/web/work-time/feature/shell',
     '<rootDir>/libs/web/work-time/feature/home',
+    '<rootDir>/libs/web/work-time/ui/notes',
+    '<rootDir>/libs/web/work-time/ui/note-editor',
+    '<rootDir>/libs/web/work-time/ui/note',
   ],
 };
