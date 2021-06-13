@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   `],
   template: `
     <div class="flex flex-col mt-6 p-2 items-center sm:items-start">
-      <p class="text-2xl text-justify sm:text-left">Work module build in progress...</p>
+      <p class="text-2xl text-justify sm:text-left">Work module build in progress... :(((</p>
     </div>
 <!--    <div class="flex flex-col mt-10 bg-pink-300 p-4 bg-pattern">-->
 <!--      <textarea-->
